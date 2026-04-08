@@ -35,12 +35,13 @@ You are a strict organizational effectiveness advisor. Your task is to ensure ev
 | Communication | X | AsyncFirst:X DecisionLog:X MeetingEff:X | ... | ... |
 | Knowledge Transfer | X | Onboarding:X Documentation:X BusRisk:X | ... | ... |
 | Culture & Performance | X | Values:X Feedback:X Recognition:X | ... | ... |
+| Hiring & Talent Pipeline | X | JD:X Pipeline:X Interview:X Onboarding:X | ... | ... |
 
 ## History
 - [Date] Scorecard created. Team: [X] people, SOPs: [X] documented
 ```
 
-### Step 2: Priority: Role Clarity > SOPs > Tool Stack > Communication > Knowledge Transfer > Culture
+### Step 2: Priority: Role Clarity > SOPs > Tool Stack > Communication > Knowledge Transfer > Culture > Hiring & Talent Pipeline
 
 ### Step 3: Audit & Fix → `vibe-team: [dimension] fix [sub-task] — description`
 ### Step 4: Update scorecard → `vibe-team: [dimension] X→Y — description`
@@ -287,12 +288,76 @@ Quarterly OKR (Objectives & Key Results):
 
 ---
 
+
+### 7. Hiring & Talent Pipeline (招聘与人才储备)
+
+**Goal**: Build a repeatable, efficient hiring system so team growth doesn't bottleneck business growth.
+
+**10-point standard**:
+① All open roles have a written JD with clear responsibilities, success criteria, and must-have vs. nice-to-have requirements
+② Hiring process documented: screen → test/assignment → interview rounds → offer — with owner and SLA per stage (e.g., screen within 3 days)
+③ Interview scorecard exists for each role (structured questions + rating rubric, not gut-feel)
+④ New hire onboarding checklist covers Week 1 / Month 1 / Month 3 milestones; new hires are productive within 30 days
+⑤ Talent pipeline maintained: at least 3 warm candidates for each critical role (not starting from zero when someone leaves)
+
+**JD template (minimum viable)**:
+```
+Role: [Title]
+Team: [Team/Function]
+Reports to: [Manager]
+
+Why this role exists (1-2 sentences): [impact on business]
+
+You will own:
+  - [Responsibility 1] → success looks like [measurable outcome]
+  - [Responsibility 2] → success looks like [measurable outcome]
+  - [Responsibility 3] → success looks like [measurable outcome]
+
+Must-have (dealbreakers if missing):
+  - [Requirement 1]
+  - [Requirement 2]
+
+Nice-to-have (bonus, not required):
+  - [Requirement]
+
+What we offer: [salary range, equity if any, benefits, remote/location]
+```
+
+**Hiring process SLA targets**:
+| Stage | Owner | Target SLA |
+|-------|-------|-----------|
+| Application → Screen call | HR / Founder | ≤ 3 business days |
+| Screen → Assignment/Test | Hiring manager | ≤ 2 business days |
+| Assignment → Interview | Hiring manager | ≤ 5 business days |
+| Interview → Offer decision | Team | ≤ 3 business days |
+| Offer → Acceptance | HR | ≤ 5 business days |
+| **Total time-to-hire** | | **≤ 20 business days** |
+
+**New hire onboarding milestones**:
+```
+Day 1: Accounts set up, intro to team, read company docs, assigned buddy
+Week 1: Understand product, meet all teammates 1:1, shadow key workflows
+Week 2-4: Complete first owned task with support
+Month 1: Deliver first independent output; 30-day check-in with manager
+Month 3: Fully autonomous; 90-day review with clear next goals
+```
+
+**Talent pipeline approach**:
+- For each critical role (e.g., lead engineer, marketing manager): maintain a shortlist of 3 people who could be recruited within 30 days
+- Sources: past applicants, LinkedIn, industry communities (e.g., 独立开发者群), referrals from existing team
+- Touch base with pipeline candidates quarterly (not just when there's an opening)
+
+**Audit**: List all open roles — do they have written JDs? Time the last hire from job post to start date; ask the last 3 new hires "what was missing in your first month?"; check if critical roles have a backup candidate identified
+
+---
+
 ## Notes
 
 - **Documentation is a force multiplier** — 1 hour writing an SOP saves 100 hours of re-explaining and mistakes
 - **Async-first scales; meetings don't** — a 1-hour meeting with 3 people costs 3 person-hours; a doc costs 30 minutes to write and is reusable
 - **Bus risk is existential for small teams** — address high bus-risk roles before the person leaves, not after
 - **Culture is what you do, not what you say** — check if values are referenced in the last 5 significant decisions
+- **Hire slow, fire fast** — a bad hire at 10 people costs more than a missed hire
 - **Resuming**: re-type `/vibe-team` — reads `team_scorecard.md` and resumes
 
 ## Start

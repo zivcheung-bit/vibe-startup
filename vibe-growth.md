@@ -37,12 +37,13 @@ You are a strict growth strategist. Your task is to build and optimize a sustain
 | Monetization | X | ARPU:X Margin:X Upsell:X Recurring:X | ... | ... |
 | Referral & Virality | X | KFactor:X NPS:X Referral:X | ... | ... |
 | Competitive Position | X | Differentiation:X Moat:X Awareness:X | ... | ... |
+| Partnerships & BD | X | Pipeline:X Contracts:X CoMarketing:X Revenue:X | ... | ... |
 
 ## History
 - [Date] Scorecard created. NSM: [X], CAC: ¥[X], LTV:CAC: [X:1]
 ```
 
-### Step 2: Priority: North Star Metric > Retention Curve > Acquisition Funnel > Monetization > Referral > Competitive Position
+### Step 2: Priority: North Star Metric > Retention Curve > Acquisition Funnel > Monetization > Referral > Competitive Position > Partnerships & BD
 
 ### Step 3: Audit & Fix → `vibe-growth: [dimension] fix [sub-task] — description`
 ### Step 4: Update scorecard → `vibe-growth: [dimension] X→Y — description`
@@ -287,6 +288,65 @@ If they say something specific and consistent → strong positioning
 If they say "I don't know" or "I just found it first" → weak positioning
 
 **Audit**: Write your differentiation statement; verify it's consistent with how users describe the product; identify your primary moat; check if moat-strengthening is on the product roadmap; review last month's competitor moves
+
+---
+
+
+### 7. Partnerships & BD (渠道合作与商务拓展)
+
+**Goal**: Build a portfolio of partnerships that bring users, distribution, or revenue at lower CAC than paid acquisition.
+
+**10-point standard**:
+① Partnership pipeline documented: ≥ 5 active conversations at any time, tracked by stage
+② At least 1 live partnership delivering measurable users or revenue per month
+③ Standard partnership agreement template reviewed by legal; deal terms documented for each active partnership
+④ Co-marketing executed: joint campaigns, cross-promotions, or bundled offers with ≥ 2 partners in last 90 days
+⑤ Partnership ROI tracked: users/revenue attributed per partner; relationships with negative ROI renegotiated or exited
+
+**Partnership types for WeChat mini-program businesses**:
+| Type | Example | What You Get | What You Give |
+|------|---------|-------------|--------------|
+| Distribution partner | 连锁门店 embed your MP | User traffic at POS | Revenue share / setup fee |
+| Content partner | KOL/媒体 ongoing collab | Content reach + credibility | Free product / commission |
+| Tech integration | 支付/物流/SaaS API | Feature that would take 3 months to build | API fees / rev share |
+| Cross-promotion | Complementary brand swap | Each other's user base | Equal value exchange |
+| White-label / OEM | B2B reseller sells your product | Sales channel + revenue | Margin to reseller |
+| Platform partnership | 微信官方生态合作 | Traffic + credibility + features | Compliance + exclusivity |
+
+**BD pipeline stages**:
+```
+Stage 1 — Identified (潜在): Partner identified, no contact yet
+Stage 2 — Contacted (初接触): First message/meeting done
+Stage 3 — Evaluating (评估中): Both sides exploring terms
+Stage 4 — Negotiating (谈判中): Draft terms on the table
+Stage 5 — Live (合作中): Agreement signed, partnership active
+Stage 6 — Optimizing (优化中): Active + growing; regular reviews
+Stage 7 — Exited (已结束): Partnership ended; document why
+```
+
+**Partnership agreement must-haves**:
+```
+□ Clear definition of what each party delivers
+□ Revenue share or compensation terms (specific %, not "TBD")
+□ Exclusivity scope (if any) — geography, category, duration
+□ Performance targets and review cadence
+□ IP ownership: who owns co-created content?
+□ Termination clause: 30-day notice; conditions for immediate exit
+□ Data sharing rules: what user data (if any) is shared, under what consent
+```
+
+**Partnership ROI calculation**:
+```
+Monthly partnership value =
+  (Users/leads delivered × conversion rate × LTV)
+  + (Revenue directly attributable to partner)
+  - (Cost of managing partnership: time × hourly rate + any payments)
+
+Minimum bar: partnership ROI > 2x monthly management cost
+Exit if: no measurable output in 60 days despite active effort
+```
+
+**Audit**: List all current partnerships and last 30-day attributed users/revenue; identify top performer and worst performer; check if standard agreement template exists; verify co-marketing was executed last quarter; list top 3 target partners not yet approached
 
 ---
 

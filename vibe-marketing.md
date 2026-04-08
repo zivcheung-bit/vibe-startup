@@ -89,17 +89,15 @@ The product type determines which channels and KPIs matter most. After declaring
 > 10-point standard: ① Ad accounts opened and verified (微信广告投放平台) ② Audience targeting defined with custom audiences + lookalikes built from existing user data ③ At least 3 creative variants tested per campaign (A/B test) ④ CTR ≥ 0.5% for Moments ads; CPM benchmarked against industry ⑤ Conversion tracking pixel deployed on all key events (add to cart, purchase, register)
 > Audit: Log in to ad backend and audit targeting setup; check creative library for ≥ 3 variants; pull last campaign CTR/CPM/CVR; verify pixel firing on all conversion events
 >
-> **User Lifecycle Management** (用户生命周期管理)
-> Sub-dimensions: 新用户引导 / 活跃用户维系 / 沉睡唤醒 / 流失预警
-> Scope: Onboarding flow, activation milestones, retention campaigns, win-back for churned users
-> 10-point standard: ① Onboarding flow completes in < 3 minutes with clear value delivery ② D1 retention ≥ 40%, D7 ≥ 20%, D30 ≥ 10% (adjust by product type) ③ Automated win-back campaign triggered at 14-day inactivity via OA template message or WeCom ④ User segments defined: new / active / at-risk / churned, each with tailored messaging ⑤ Lifecycle KPIs tracked in dashboard weekly
-> Audit: Walk through onboarding as new user and time it; pull D1/D7/D30 retention from Mini-Program backend; check if win-back automation is configured; review lifecycle segmentation in CRM/WeCom
+> **User Lifecycle Management** → Handled by `/vibe-operations`
+> Marketing's role: ensure acquisition campaigns hand off users cleanly into the onboarding flow.
+> Check: Is the post-registration experience aligned with the acquisition promise? Does the WeChat OA welcome message match the ad creative that brought the user in?
+> For full lifecycle audit (onboarding, retention, VIP, win-back) → run `/vibe-operations`
 >
-> **Data Monitoring & Analytics** (数据监测与分析)
-> Sub-dimensions: 数据埋点 / 漏斗追踪 / 归因分析 / 周报看板
-> Scope: Event tracking, conversion funnel, channel attribution, weekly KPI reporting
-> 10-point standard: ① All key user actions tracked (open, register, add to cart, purchase, share, return visit) ② Full conversion funnel visible with drop-off rates at each step ③ Channel attribution configured (UTM parameters or WeChat channel tags) ④ Weekly KPI dashboard reviewed by team ⑤ A/B test results documented and actioned
-> Audit: Check Mini-Program data buried point list; open WeChat analytics backend and verify funnel data; test UTM links from each channel; review last 4 weekly reports
+> **Data Monitoring & Analytics** → Handled by `/vibe-data`
+> Marketing's role: ensure channel attribution tags (UTM / WeChat channel params) are applied to every campaign link.
+> Check: Do all ad links have channel tags? Can you see campaign-level conversion rates in the analytics dashboard?
+> For full data infrastructure audit (event tracking, funnel visibility, A/B testing framework) → run `/vibe-data`
 >
 > **Word of Mouth & Community Building** (口碑与社区建设)
 > Sub-dimensions: 用户评价 / UGC内容 / NPS / 品牌大使
@@ -134,8 +132,8 @@ The product type determines which channels and KPIs matter most. After declaring
 | Fission & Growth Mechanics | X | Design:X K-Factor:X Steps:X Compliance:X | ... | ... |
 | KOL/KOC Collaboration | X | Selection:X Brief:X Campaigns:X KOC:X | ... | ... |
 | Paid Media | X | Account:X Targeting:X Creative:X Tracking:X | ... | ... |
-| User Lifecycle Management | X | Onboarding:X D1:X D7:X WinBack:X | ... | ... |
-| Data Monitoring & Analytics | X | Tracking:X Funnel:X Attribution:X Dashboard:X | ... | ... |
+| User Lifecycle Management | → /vibe-operations | — | — | Run /vibe-operations for full audit |
+| Data Monitoring & Analytics | → /vibe-data | — | — | Run /vibe-data for full audit |
 | Word of Mouth & Community | X | Rating:X UGC:X NPS:X Ambassador:X | ... | ... |
 | Compliance & Platform Rules | X | AdLaw:X WeChat:X PIPL:X License:X | ... | ... |
 | Brand Assets | X | Visual:X Voice:X Consistency:X Recall:X | ... | ... |
@@ -156,8 +154,8 @@ The product type determines which channels and KPIs matter most. After declaring
 | 9 | KOL/KOC program | ... | ... | ... |
 | 10 | WeChat paid ads | ... | ... | ... |
 | 11 | Brand guidelines | ... | ... | ... |
-| 12 | Analytics & tracking | ... | ... | ... |
-| 13 | Privacy policy & compliance | ... | ... | ... |
+| 12 | Analytics & tracking | → see /vibe-data | High | Use /vibe-data for full audit |
+| 13 | Privacy policy & compliance | → see /vibe-legal | High | Use /vibe-legal for full audit |
 
 ## History
 - [Date] Scorecard created, product type: [type]
@@ -168,7 +166,9 @@ The product type determines which channels and KPIs matter most. After declaring
 ### Step 2: Choose the Dimension to Improve
 
 Find the lowest-scoring dimension that has **not yet reached its market-ready threshold**. If tied, use this priority order:
-**Compliance & Platform Rules > User Targeting & Persona > WeChat Ecosystem Matrix > Private Domain Operations > Content Strategy > Conversion Funnel > Data & Analytics > Fission & Growth > User Lifecycle > KOL/KOC > Paid Media > Word of Mouth > Brand Assets**
+**Compliance & Platform Rules > User Targeting & Persona > WeChat Ecosystem Matrix > Private Domain Operations > Content Strategy > Conversion Funnel > Fission & Growth > KOL/KOC > Paid Media > Word of Mouth > Brand Assets**
+
+> Note: User Lifecycle Management → handled by `/vibe-operations` | Data Monitoring & Analytics → handled by `/vibe-data`
 
 ### Step 3: Fix
 

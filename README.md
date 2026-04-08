@@ -2,7 +2,7 @@
 
 **Full-stack business readiness framework for Chinese mainland mini-program startups.**
 
-One repo, 11 commands, 10 business dimensions. Audit everything, score it, fix the biggest gap, repeat until launch-ready and scale-ready.
+One repo, 11 commands, 10 business dimensions — built for medium-sized teams (10-30 people).
 
 ---
 
@@ -29,18 +29,19 @@ done
 
 | Priority | Dimension | Command | Sub-dims | Description |
 |----------|-----------|---------|----------|-------------|
-| 1 | Legal & Compliance | `/vibe-legal` | 6 | Licenses, contracts, PIPL, ad compliance, IP, WeChat rules |
-| 2 | Financial Health | `/vibe-finance` | 6 | Cash runway, unit economics, CAC/LTV, revenue model |
+| 1 | Legal & Compliance | `/vibe-legal` | **7** | Licenses, contracts, PIPL, ad compliance, IP, WeChat rules, **employment law** |
+| 2 | Financial Health | `/vibe-finance` | **7** | Cash runway, unit economics, CAC/LTV, revenue model, **fundraising & IR** |
 | 3 | Product Readiness | `/vibe-production` | 13 | Security, stability, tests, architecture, performance, observability |
 | 4 | Data Infrastructure | `/vibe-data` | 6 | Event tracking, funnels, attribution, KPI dashboards, A/B testing |
 | 5 | Customer Service | `/vibe-service` | 6 | Response speed, AI coverage, resolution rate, CSAT, feedback loop |
 | 6 | User Operations | `/vibe-operations` | 7 | Onboarding, activation, retention, community, VIP, win-back |
-| 7 | Marketing Readiness | `/vibe-marketing` | 13 | WeChat ecosystem, private domain, content, KOL, paid, fission |
-| 8 | Growth Engine | `/vibe-growth` | 6 | NSM, acquisition funnel, retention curve, monetization, virality |
-| 9 | Team & Process | `/vibe-team` | 6 | Role clarity, SOPs, tool stack, communication, knowledge transfer |
+| 7 | Marketing Readiness | `/vibe-marketing` | 11 | WeChat ecosystem, private domain, content, KOL, paid, fission, brand |
+| 8 | Growth Engine | `/vibe-growth` | **7** | NSM, acquisition, retention, monetization, virality, competitive position, **partnerships & BD** |
+| 9 | Team & Process | `/vibe-team` | **7** | Role clarity, SOPs, tool stack, communication, knowledge transfer, culture, **hiring pipeline** |
 | 10 | Automation & AI | `/vibe-automation` | 6 | CS bot, workflow automation, content AI, tool stack, governance |
 
-**Total: 75 sub-dimensions across 10 business areas**
+**Total: 77 sub-dimensions across 10 business areas**  
+*(vibe-marketing reduced from 13→11 by delegating User Lifecycle → /vibe-operations and Data Analytics → /vibe-data)*
 
 ---
 
@@ -73,16 +74,16 @@ Open Claude Code in any project and run:
 
 ```
 /vibe-startup     # Start here — scores all 10 dimensions, finds the weakest link
-/vibe-legal       # Legal & compliance audit
-/vibe-finance     # Financial health audit
-/vibe-production  # Product & tech audit
-/vibe-data        # Data infrastructure audit
-/vibe-service     # Customer service audit
-/vibe-operations  # User operations audit
-/vibe-marketing   # Marketing readiness audit
-/vibe-team        # Team & process audit
-/vibe-growth      # Growth engine audit
-/vibe-automation  # Automation & AI audit
+/vibe-legal       # Legal & compliance (7 sub-dims, incl. employment law)
+/vibe-finance     # Financial health (7 sub-dims, incl. fundraising & IR)
+/vibe-production  # Product & tech (13 sub-dims)
+/vibe-data        # Data infrastructure (6 sub-dims)
+/vibe-service     # Customer service (6 sub-dims)
+/vibe-operations  # User operations (7 sub-dims)
+/vibe-marketing   # Marketing readiness (11 sub-dims)
+/vibe-team        # Team & process (7 sub-dims, incl. hiring pipeline)
+/vibe-growth      # Growth engine (7 sub-dims, incl. partnerships & BD)
+/vibe-automation  # Automation & AI (6 sub-dims)
 ```
 
 Re-typing any command resumes from the existing scorecard.
@@ -92,10 +93,10 @@ Re-typing any command resumes from the existing scorecard.
 ## Design Principles
 
 - **Legal first** — one WeChat policy violation can wipe out your entire user base overnight
+- **No duplicates** — each topic owned by exactly one sub-framework; others delegate
 - **Measure before you optimize** — don't invest in marketing until Data ≥ 6
 - **Automate before you hire** — every new recurring manual task asks "can this be automated?"
 - **One dimension per sprint** — fix the biggest gap completely, then move on
-- **Scorecard-driven** — every session starts and ends by reading/writing the scorecard
 
 ---
 

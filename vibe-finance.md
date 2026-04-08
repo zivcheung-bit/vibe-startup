@@ -37,12 +37,13 @@ You are a strict financial advisor for early-stage startups. Your task is to dri
 | Accounting System | X | PnL:X Automation:X Accuracy:X | ... | ... |
 | Cost Structure | X | COGS:X% Ops:X% Marketing:X% | ... | ... |
 | Revenue Streams | X | Diversity:X Predictability:X Growth:X | ... | ... |
+| Fundraising & IR | X | Model:X DataRoom:X Story:X CapTable:X | ... | ... |
 
 ## History
 - [Date] Scorecard created. Revenue: ¥[X]/mo, Runway: [X]mo, Gross Margin: [X]%
 ```
 
-### Step 2: Priority: Unit Economics > Cash Runway > Payment Infra > Accounting > Cost Structure > Revenue Streams
+### Step 2: Priority: Unit Economics > Cash Runway > Payment Infra > Accounting > Cost Structure > Revenue Streams > Fundraising & IR
 
 ### Step 3: Audit & Fix → `vibe-finance: [dimension] fix [sub-task] — description`
 ### Step 4: Update scorecard → `vibe-finance: [dimension] X→Y — description`
@@ -251,6 +252,86 @@ Track these 10 metrics weekly:
 | Refund Rate (%) | | | | |
 | ARPU (¥) | | | | |
 | LTV:CAC ratio | | | | |
+
+
+### 7. Fundraising & Investor Relations (融资与投资人管理)
+
+**Goal**: Be perpetually fundraising-ready — even if not actively raising, the financial model, data room, and narrative are always current.
+
+**10-point standard**:
+① 3-year financial model (P&L, cash flow, balance sheet) exists and updated monthly with actuals vs. projections
+② Data room ready: 10 key documents organized and access-controlled (see list below)
+③ Investor narrative ("pitch story") is written, tested with at least 3 advisors, and updated every 6 months
+④ Cap table is clean: all equity, options, and SAFEs documented in a cap table tool (e.g., Carta, Pulley, or spreadsheet with legal review)
+⑤ Monthly investor update sent to all existing shareholders/angels within 7 days of month close
+
+**Data room checklist (minimum viable)**:
+```
+Tier 1 — Always ready (share at first meeting):
+  □ Pitch deck (10-15 slides)
+  □ 1-page executive summary
+  □ Financial model (3-year projections + current actuals)
+
+Tier 2 — Share after NDA / serious interest:
+  □ Business license + corporate structure chart
+  □ Cap table (current + post-money if raising)
+  □ Key contracts (top 5 customer contracts, key partnerships)
+  □ Team org chart + key employee contracts/equity schedules
+  □ Product demo / technical architecture overview
+
+Tier 3 — Due diligence (late stage):
+  □ Full financial statements (audited if available)
+  □ IP ownership documentation (trademarks, patents, code ownership)
+  □ All litigation history (if any)
+  □ Customer references list
+  □ Full employee list + compensation summary
+```
+
+**Financial model must-have tabs**:
+```
+Tab 1: Dashboard — Key metrics (MRR/ARR, users, CAC, LTV, runway)
+Tab 2: P&L — Monthly revenue, COGS, gross margin, opex, EBITDA
+Tab 3: Cash Flow — Operating + investing + financing activities
+Tab 4: Unit Economics — CAC by channel, LTV, payback period
+Tab 5: Headcount Plan — Current + planned hires by month
+Tab 6: Scenarios — Base / bull / bear case assumptions
+Tab 7: Actuals vs. Plan — Monthly variance analysis
+```
+
+**Monthly investor update template**:
+```
+Subject: [Company] Update — [Month Year]
+
+TL;DR: [2-3 sentences — headline metric + biggest win + biggest challenge]
+
+Metrics:
+  Revenue/GMV: ¥[X] ([▲▼ X%] MoM)
+  Active Users: [X] ([▲▼ X%] MoM)
+  Key metric: [NSM value] ([▲▼ X%])
+
+Wins this month:
+  1. [Specific achievement]
+  2. [Specific achievement]
+
+Challenges:
+  1. [Challenge + what we're doing about it]
+
+Focus next month:
+  1. [Priority]
+  2. [Priority]
+
+Ask: [Specific request — intro to X, advice on Y, or just "no ask this month"]
+```
+
+**Cap table key rules**:
+- Total issued + reserved (ESOP pool) should always equal 100%
+- ESOP pool: reserve 10-15% before Series A; 15-20% before Series B
+- Anti-dilution provisions: understand your existing investors' rights before raising
+- VIE structure: if operating entity is Chinese but raising foreign capital, VIE structure may be required — get legal counsel early
+
+**Audit**: Open financial model — is it updated with last month's actuals? Check data room — are all Tier 1 documents current? Verify cap table totals 100%; check if monthly investor update was sent last month; identify the single biggest financial story/risk an investor would ask about
+
+---
 
 ## Notes
 

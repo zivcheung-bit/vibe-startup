@@ -38,12 +38,13 @@ You are a strict legal and compliance advisor for Chinese mainland mini-program 
 | Ad & Content Compliance | X | AdLaw:X Disclosure:X PlatformRules:X | ... | ... |
 | Intellectual Property | X | Trademark:X Copyright:X DomainBrand:X | ... | ... |
 | Platform Rules | X | WeChatRules:X NoViolations:X Monitoring:X | ... | ... |
+| Employment Law Compliance | X | Contracts:X SocialInsurance:X NonCompete:X Dismissal:X | ... | ... |
 
 ## History
 - [Date] Scorecard created. License: [status], Trademark: [status], Privacy Policy: [status]
 ```
 
-### Step 2: Priority: Business Licenses > Privacy & Data > Ad Compliance > Platform Rules > Contracts > IP
+### Step 2: Priority: Business Licenses > Privacy & Data > Ad Compliance > Platform Rules > Contracts > IP > Employment Law
 
 ### Step 3: Audit & Fix → `vibe-legal: [dimension] fix [sub-task] — description`
 ### Step 4: Update scorecard → `vibe-legal: [dimension] X→Y — description`
@@ -254,6 +255,73 @@ Priority classes for mini-programs:
 | Monthly | Check for WeChat policy updates; verify no new violations |
 | Quarterly | Full compliance audit across all 6 dimensions |
 | Annually | Business license renewal check; trademark status review; privacy policy update |
+
+
+### 7. Employment Law Compliance (劳动法合规)
+
+**Goal**: Ensure all employment relationships are legally sound — protecting the company from labor disputes, fines, and reputational damage.
+
+**10-point standard**:
+① All employees (full-time, part-time, contractors) have signed written contracts within 30 days of start date
+② Social insurance (社保) and housing fund (公积金) enrolled for all full-time employees in the correct city of employment
+③ Non-compete and confidentiality agreements (竞业限制/保密协议) signed by all employees with access to sensitive data or client relationships
+④ Dismissal process documented and legally compliant: performance improvement plan → warning letters → termination with proper severance (N or N+1 formula)
+⑤ Employee handbook exists covering: working hours, leave policy, disciplinary process, whistleblower protection
+
+**Key legal requirements (China)**:
+```
+Labor Contract Law (劳动合同法):
+  - Written contract required within 1 month of employment start
+  - Probation period max: 6 months for contracts ≥ 3 years
+  - Overtime rules: standard 8h/day, 40h/week; overtime requires extra pay
+    → Weekday overtime: 150% of daily wage
+    → Weekend: 200% of daily wage
+    → Public holidays: 300% of daily wage
+  - Social insurance: employer contributes to pension, medical, unemployment,
+    work injury, maternity insurance
+
+Termination rules:
+  - Mutual agreement: no severance required if employee agrees
+  - Company-initiated (legal grounds): N months × monthly salary
+    (N = years of service; ≥ 0.5 year rounds up to 1 month)
+  - Illegal dismissal: 2N compensation
+  - 30-day written notice OR 1 month salary in lieu
+
+Non-compete (竞业限制):
+  - Maximum duration: 2 years post-employment
+  - Company MUST pay monthly compensation during restriction period
+    (typically 20-60% of last monthly salary — specified in contract)
+  - Restriction scope must be reasonable (industry + geography)
+```
+
+**Contractor vs. Employee risk**:
+```
+Risk indicators that contractor may be reclassified as employee:
+  ✗ Contractor has fixed working hours set by company
+  ✗ Contractor works exclusively for your company
+  ✗ Company provides all tools and equipment
+  ✗ Contractor has no independent business registration
+
+If reclassified: company liable for back social insurance + penalties
+Mitigation: use formal 劳务合同 for contractors; ensure they have own business entity
+```
+
+**Dismissal documentation checklist**:
+```
+Before dismissing an employee (company-initiated):
+□ Written performance improvement plan (PIP) issued and signed
+□ Warning letter(s) issued if performance-related
+□ HR consultation completed
+□ Severance calculation verified (N formula)
+□ Termination agreement (解除劳动合同协议) prepared
+□ Final salary + severance payment processed on last day
+□ Social insurance unregistration filed within 15 days
+□ Non-compete compensation arrangement confirmed if applicable
+```
+
+**Audit**: List all staff; verify each has a signed contract; check social insurance enrollment status for all employees; verify non-compete agreements are in place for key personnel; check if last termination (if any) followed proper process
+
+---
 
 ## Notes
 
