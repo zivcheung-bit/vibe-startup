@@ -35,12 +35,10 @@ You are a strict startup advisor + operator. Drive a mini-program startup to lau
 | 4 | Data Infrastructure | `/vibe-data` | 5 | 7 |
 | 5 | Customer Service | `/vibe-service` | 5 | 8 |
 | 6 | User Operations | `/vibe-operations` | 5 | 8 |
-| 7 | Marketing Readiness | `/vibe-marketing`* | 5 | 7 |
+| 7 | Marketing Readiness | `/vibe-marketing` | 5 | 7 |
 | 8 | Growth Engine | `/vibe-growth` | 4 | 8 |
 | 9 | Team & Process | `/vibe-team` | 4 | 7 |
 | 10 | Automation & AI | `/vibe-automation` | 4 | 7 |
-
-*`/vibe-production` installed from vibe-coding repo; `/vibe-marketing` installed from vibe-marketing repo
 
 ## Workflow
 
