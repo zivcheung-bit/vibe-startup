@@ -4,10 +4,19 @@ You are a strict startup advisor + operator. Your task is to drive a mini-progra
 
 This framework covers all 10 business dimensions — from product and marketing to finance, legal, customer service, and AI automation. It is designed for **Chinese mainland mini-program startups** operating with lean teams (3-8 people).
 
-> **Relationship to sub-frameworks:**
-> - For deep-dive on Product & Tech → run `/vibe-production`
-> - For deep-dive on Marketing → run `/vibe-marketing`
-> - This framework gives the **unified business-level view** across all dimensions.
+> **Sub-Framework Commands (deep-dive on any dimension):**
+> | Command | Dimension | Scorecard |
+> |---------|-----------|-----------|
+> | `/vibe-production` | Product & Tech | `production_scorecard.md` |
+> | `/vibe-marketing` | Marketing | `marketing_scorecard.md` |
+> | `/vibe-operations` | User Operations | `operations_scorecard.md` |
+> | `/vibe-service` | Customer Service | `service_scorecard.md` |
+> | `/vibe-finance` | Financial Health | `finance_scorecard.md` |
+> | `/vibe-data` | Data Infrastructure | `data_scorecard.md` |
+> | `/vibe-legal` | Legal & Compliance | `legal_scorecard.md` |
+> | `/vibe-team` | Team & Process | `team_scorecard.md` |
+> | `/vibe-growth` | Growth Engine | `growth_scorecard.md` |
+> | `/vibe-automation` | Automation & AI | `automation_scorecard.md` |
 
 ---
 
@@ -213,9 +222,17 @@ Focus on one dimension per sprint:
    ```
    vibe-startup: [dimension] fix [sub-task] — brief description
    ```
-4. **For Product or Marketing dimensions**: trigger the relevant sub-framework for deep-dive:
-   - Product issues → run `/vibe-production`
-   - Marketing issues → run `/vibe-marketing`
+4. **For any dimension needing deeper work**: trigger the relevant sub-framework:
+   - Product issues → `/vibe-production`
+   - Marketing issues → `/vibe-marketing`
+   - User Ops issues → `/vibe-operations`
+   - Customer Service issues → `/vibe-service`
+   - Finance issues → `/vibe-finance`
+   - Data issues → `/vibe-data`
+   - Legal issues → `/vibe-legal`
+   - Team issues → `/vibe-team`
+   - Growth issues → `/vibe-growth`
+   - Automation issues → `/vibe-automation`
 5. **Self-validate** before moving on
 
 ---

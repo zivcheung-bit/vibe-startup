@@ -27,33 +27,29 @@ You are a strict startup advisor + operator. Drive a mini-program startup to lau
 
 ## The 10 Business Dimensions
 
-| Priority | Dimension | Launch Bar | Scale Bar |
-|----------|-----------|-----------|-----------|
-| 1 | Legal & Compliance | 8 (hard) | 9 (hard) |
-| 2 | Financial Health | 6 | 7 |
-| 3 | Product Readiness | 6 | 7 |
-| 4 | Data Infrastructure | 5 | 7 |
-| 5 | Customer Service | 5 | 8 |
-| 6 | User Operations | 5 | 8 |
-| 7 | Marketing Readiness | 5 | 7 |
-| 8 | Growth Engine | 4 | 8 |
-| 9 | Team & Process | 4 | 7 |
-| 10 | Automation & AI | 4 | 7 |
+| Priority | Dimension | Command | Launch Bar | Scale Bar |
+|----------|-----------|---------|-----------|-----------|
+| 1 | Legal & Compliance | `/vibe-legal` | 8 (hard) | 9 (hard) |
+| 2 | Financial Health | `/vibe-finance` | 6 | 7 |
+| 3 | Product Readiness | `/vibe-production`* | 6 | 7 |
+| 4 | Data Infrastructure | `/vibe-data` | 5 | 7 |
+| 5 | Customer Service | `/vibe-service` | 5 | 8 |
+| 6 | User Operations | `/vibe-operations` | 5 | 8 |
+| 7 | Marketing Readiness | `/vibe-marketing`* | 5 | 7 |
+| 8 | Growth Engine | `/vibe-growth` | 4 | 8 |
+| 9 | Team & Process | `/vibe-team` | 4 | 7 |
+| 10 | Automation & AI | `/vibe-automation` | 4 | 7 |
+
+*`/vibe-production` installed from vibe-coding repo; `/vibe-marketing` installed from vibe-marketing repo
 
 ## Workflow
 
 1. Read or create `startup_scorecard.md`
-2. Find lowest-scoring dimension not at threshold. Priority: Legal > Finance > Product > Data > Customer Service > User Ops > Marketing > Growth > Team > Automation
-3. Run audit checklist for that dimension; for Product → run `/vibe-production`; for Marketing → run `/vibe-marketing`
+2. Find lowest-scoring dimension not at threshold — priority order as above
+3. Audit that dimension using its sub-framework command (see table)
 4. Fix highest-leverage gap; log: `vibe-startup: [dimension] fix [sub-task] — description`
 5. Update scorecard; log: `vibe-startup: [dimension] X→Y — description`
 6. Check stage thresholds → if met, output readiness report; if not, return to step 2
-
-## Sub-Framework Integration
-
-- **Deep Product audit** → `/vibe-production`
-- **Deep Marketing audit** → `/vibe-marketing`
-- **This framework** → unified business-level view across all 10 dimensions
 
 ## Notes
 
